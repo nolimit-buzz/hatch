@@ -312,7 +312,9 @@ font-weight: 900;
     .right-panel .right-panel-content .tab-content-nav .side-left h4{
         font-size: 14px;
     }
-
+    .right-panel .right-panel-content .tab-content-nav .side-right .recently-active{
+        width: 100%!important;
+    }
 }
 
 

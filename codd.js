@@ -3,6 +3,7 @@
  
     $(document).ready(function(){
 
+        // Project Tab
         $(".right-panel-menu .project-menu").each(function(i,v){
         console.log('v',v);
             $(v).click(function(){
@@ -15,6 +16,18 @@
             });
             
         });
+
+        // Project  switch
+        
+        $("svg#list").click(function(i,v){
+            $(".project-list").css("display","grid");
+            $(".project-grid").css("display","none");;
+        });
+        $("svg#grid").click(function(i,v){
+            $(".project-list").css("display","none");;
+            $(".project-grid").css("display","grid");;
+        });
+
 
     });
 });

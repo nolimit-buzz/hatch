@@ -112,9 +112,9 @@ margin-top: 50px;
 
 }
 
-.left-panel-menu .project-menu svg {
+/* .left-panel-menu .project-menu svg {
     margin-right: -33px;
-}
+} */
 
 svg.project-switch.active path:nth-of-type(even){
     fill: #48B85C!important;
@@ -239,7 +239,7 @@ gap: 10px;
 transition: all .3s ease;
 position: relative;
 border-bottom: 1px solid transparent;
-
+margin-bottom: -2px;
 }
 
 .right-panel .right-panel-menu .project-menu h4{
@@ -259,7 +259,7 @@ cursor: pointer;
 }
 
 .right-panel .right-panel-menu .project-menu.active {
-    border-bottom: 1px solid #48B85C;
+    border-bottom: 2px solid #48B85C;
 
     }
 .right-panel .right-panel-menu .project-menu.active h4{
@@ -417,7 +417,7 @@ grid-template-rows: 80px max-content;
 gap: 20px;
 background: #FFFFFF;
 /* Shadows/Gray Blue/3%/5b */
-
+cursor: pointer;
 box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
 border-radius: 7.62857px;
 padding: 25px;
@@ -547,7 +547,7 @@ color: #6B7A99;
 }
 
 .project-grid .right-panel-content-group .group-content .project_meta .meta .text .value{
-font-weight: 500;
+font-weight: 300;
 font-size: 13px;
 line-height: 20px;
 color: #7D8FB3;
@@ -570,6 +570,7 @@ color: #7D8FB3;
     box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
     border-radius: 7.62857px;
     padding: 20px;
+    cursor: pointer;
 }
 
 
@@ -587,7 +588,7 @@ color: #7D8FB3;
 
 .project-list .project-list-card .project_meta{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(22%,max-content)); 
+    grid-template-columns: repeat(4,1fr); 
     /* grid-template-columns: repeat(3,1fr);    */
     column-gap: 10%;
     row-gap: 17px;
@@ -597,8 +598,9 @@ color: #7D8FB3;
 .project-list .project-list-card .project_meta .meta{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 115px;
+    /* justify-content: space-between; */
+    /* width: 115px; */
+    gap:10px;
 }
 
 .project-list .project-list-card .project_meta .meta .text .title{
@@ -628,11 +630,14 @@ margin-left:-10px;
 
 
 .project-list .project-list-card .project_meta .meta .text .value{
-font-weight: 500;
+font-weight: 300;
 font-size: 13px;
 line-height: 20px;
 color: #7D8FB3;
 }
+/* .project-list .project-list-card .project_meta .meta .text .value.sw{
+width: 90px;
+} */
 
 
 .project-list .project-list-card .viewbtn-members {
